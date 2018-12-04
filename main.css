@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "";
+    src: url (../)
+}
+
+
+
+header {
+    border-bottom: solid;
+    border-bottom-color: #EEDC6E;
+    padding-bottom: 10px;
+}
+
+#home {
+    background-image: url(img/wowairlogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    display: inline-block;
+    height: 50pt;
+    width: 50pt;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+#filter {
+    background-color: #880071;
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 1em;
+    margin-top: 1.2em;
+    margin-right: 1.6em;
+    cursor: pointer;
+}
+
+body{
+    background-color: white;
+}
+
+h1 {
+    background-color: #EEDC6E;
+    padding-left: 0.7em;
+    color: #851B80;
+}
+
+h2 {
+    font-size: 8em;
+    margin-left: 10pt;
+    margin-bottom: 0;
+    display: inline;
+    position: relative;
+}
+
+section {
+    background-color: #FAFAFA;
+}
+
+article {
+    border: solid;
+    border-color: #880071;
+    position: relative;
+}
+
+article figure {
+    width: 15%;
+    position: absolute;
+    padding-right: 2em;
+    top: 0em;
+    right: 1em;
+    border-width: thick;
+}
+
+article img {
+    width: 250%;
+    height: auto;
+    position: relative;
+    border: solid;
+    border-width: thin;
+    border-color: #880071;
+    
+
+}
+
+figcaption {
+    width: 100px;
+    font-size: .8em;
+    
+}
+
+#aantalsterren {
+    font-size: 1.2em;
+    display: block;
+    padding-top: 1em;
+    padding-left: .5em;
+    position: relative;
+    top: 2em;  
+}
+
+#sterren {
+    color: gold;
+    font-size: 1.5em;
+    padding-left: .5em;
+    position: relative;
+    top: 1em;
+}
+
+#tag {
+    padding-left: .5em;
+    font-size: 1.2em;
+    position:relative;
+    top: 2em;
+}
+
+article li  {
+    list-style-type: none;
+    display: inline;
+    position:relative;
+    top: 2em;
+    left: -2em;
+    background: purple;
+    padding: .6em;
+    border-radius: 0 1em 1em 0;
+    color: white;
+}
+
+article button {
+    background-color: #FAFAFA;
+    border: none;
+    color: #851B80;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 9em;
+    bottom: .8em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#form1 {
+    font-size: 1.2em;  
+    padding-left: .5em;
+}
+
+#vraag1 input{
+    border: solid #EEDC6E; 
+    padding: 1em 1em;
+    font-size: 1em;
+    display: inline-block;
+}
+
+#vraag1 button{
+    background-color: purple;
+    padding: 1.1em 1em;
+    font-size: 1em;
+    color: white;
+    display: inline-block;
+}
+
+#stap1 {
+    font-size: .7em;
+    margin-left: 19em;
+    margin-top: .1em;
+}
+
+
+
+
+
+
+
