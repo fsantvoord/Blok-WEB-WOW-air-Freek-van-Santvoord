@@ -1,72 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" 
-     href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.typekit.net/dja4fhc.css">
 
 
-    <head>
-        <meta charset="utf-8">
-      
-        <title>Wow air verhalen</title>
+<head>
+    <meta charset="utf-8">
 
-    </head>
-    <body>
-        <header>
-            <!--Home button-->
-            <button method="get" action="/index.html" id="home"></button>
-            <!--Filter button-->
-            <button type="button" id="filter" ><i class="fas fa-filter"></i>Kies uit de 99 verhalen</button>
-           
-            
-        </header>
-        
-        <section id="top5">
-        <h1>Kies een verhaal uit de top 5</h1>
-            <article>
-            <h2>#1</h2>
-            <p id="aantalsterren">Aantal sterren</p>
-                <p id="sterren"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-           
-            
-            <p id="tag">Getagd door de lezers als</p>
+    <title>Wow air verhalen</title>
+
+</head>
+
+<body>
+    <header>
+        <!--Home button-->
+        <button method="get" action="/index.html" id="home"></button>
+        <!--Filter button-->
+        <button type="button" id="mijnwow"><i id="membericon" class="fas fa-user"></i><br><span id="textmijnwow">Mijn WOW</span></button>
+
+
+    </header>
+
+    <!--WOW verhalen + CSS afbeelding-->
+    <section id="wowverhaal">
+
+
+        <h2 id="wowverhalenbanner1">wow</h2>
+
+        <h3 id="wowverhalenbanner2">verhalen</h3>
+
+        <p id="wowverhalenbanner3">Maak een keuze <br> uit 99 verhalen</p>
+        <button type="button" id="wowverhalenbanner4">Toon alle verhalen</button>
+
+
+
+    </section>
+
+    <!--Filter section-->
+    <section id="filter">
+        <form>
+            <legend><i class="fas fa-book-open"></i> Je verhaal vinden <i class="fas fa-angle-down"></i></legend>
             <ul>
-                <li>Blij</li>
-                <li>Verrast</li>
-                <li>Opgewekt</li>
+               
+                <li>
+                    <p>Leesduur:</p>
+                    <input type='radio' value='1' name='radio' id='radio1' />
+                    <label for='radio1'>Kort</label>
+                </li>
+                <li>
+                    <input type='radio' value='2' name='radio' id='radio2' />
+                    <label for='radio2'>Gemiddeld</label>
+                </li>
+                <li>
+                    <input type='radio' value='3' name='radio' id='radio3' />
+                    <label for='radio3'>Lang</label>
+                </li>
             </ul>
-            
-            <figure>
-            <img src="img/cover.png">
-            <figcaption>#4 - Verrast <br>
-            05-02-2012 <br>
-            Molovich</figcaption>
-            </figure>
-            <button type="button"><i class="fas fa-arrow-alt-circle-down"></i></button>
-            
-            </article>
-        </section>
-        
-        <section>
-            <h1>Kies één van de 99 verhalen op basis van je gevoel.</h1>
-            <p id="form1">Ik voel me:</p>
-            
-            <form method="get" id="vraag1" fieldset="Vraag1">
-            <input type="text" name="Gevoel input" placeholder="bv. ontspannen">
-            <button type="submit"><i class="fas fa-angle-right"></i></button>
-            </form>
-            <p id="stap1">Stap 1/2</p>
-            
-            <!--
-            <form method="get" id="vraag2" fieldset="Vraag1">
-            <input type="text" name="Gevoel input" placeholder="bv. opgewekt">
-            <button type="submit"><i class="fas fa-angle-right"></i></button>
-            </form>
-            <p>Stap 2/2</p>-->
-            
-        </section>
+            <!--Bron radio button (CSS + HTML) https://jsfiddle.net/petrabarus/pPgS7/-->
 
-        
-    </body>
+            <p>Genre:</p>
+<!--
+            <input type="checkbox" name="Genre" value="Bike"> Avontuur
+            <input type="checkbox" name="Genre" value="Bike"> Beroemdheid
+            <input type="checkbox" name="Genre" value="Bike"> Drama
+            <input type="checkbox" name="Genre" value="Bike"> Fantasie
+            <input type="checkbox" name="Genre" value="Bike"> Humor <br>
+            <input type="checkbox" name="Genre" value="Bike"> Sport
+            <input type="checkbox" name="Genre" value="Bike"> Verdriet
+-->
+                   <ul>
+                <li>
+                    <input type='checkbox' value='' name='genre' id='checkbox1' />
+                    <label for="checkbox">Avontuur</label>
+                </li>
+                <li>
+                    <input type='checkbox' value='genre' name='genre' id='checkbox2' />
+                    <label for="checkbox">Beroemdheid</label>
+                </li>
+                <li>
+                    <input type='checkbox' value='genre' name='genre' id='checkbox3' />
+                    <label for="checkbox">Drama</label>
+                </li>
+            </ul>
+           
+           
+           
+            <p>Zoek op trefwoord:</p>
+            <input type="text" name="Zoek" value="" placeholder="bv. regenboog"><br>
+
+            <button>Zoeken <i class="fas fa-search"></i></button>
+
+            <button>Verras mij <i class="fas fa-gift"></i></button>
+
+            <button>Toon alle verhalen</button>
+
+        </form>
+    </section>
+
+
+    <!--Verhalen-->
+    <section>
+
+        <!--Verhaal: Droom-->
+        <article id="droom">
+            <!--<img src="img/droom.jpeg">-->
+            <button>Download</button>
+            <h4>Droom</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p>122 beoordelingen</p>
+
+            <button>Lees nu!</button>
+        </article>
+
+        <!--Verhaal: Gefrustreerd-->
+
+        <article id="gefrustreerd">
+            <!--<img src="img/gefrustreerd.jpeg">-->
+            <button type="button">Download</button>
+            <h4>Droom</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p>122 beoordelingen</p>
+
+            <button type="button">Lees nu!</button>
+        </article>
+
+    </section>
+
+</body>
+
 </html>
