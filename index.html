@@ -1,111 +1,119 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.typekit.net/dja4fhc.css">
-
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/dja4fhc.css">
 
     <title>Wow air verhalen</title>
-
 </head>
 
 <body>
     <header>
         <!--Home button-->
-        <button method="get" action="/index.html" id="home"></button>
+        <button method="get" action="/index.html"></button>
         <!--Filter button-->
-        <button type="button" id="mijnwow"><i id="membericon" class="fas fa-user"></i><br><span id="textmijnwow">Mijn WOW</span></button>
-
-
+        <button type="button"><i id="membericon" class="fas fa-user"></i><br>
+            <span>Mijn WOW</span></button>
     </header>
 
     <!--WOW verhalen + CSS afbeelding-->
     <section id="wowverhaal">
-
-
         <h2 id="wowverhalenbanner1">wow</h2>
-
         <h3 id="wowverhalenbanner2">verhalen</h3>
-
         <p id="wowverhalenbanner3">Maak een keuze <br> uit 99 verhalen</p>
         <button type="button" id="wowverhalenbanner4">Toon alle verhalen</button>
-
-
-
     </section>
 
-    <!--Filter section-->
-    <section id="filter">
-        <form>
-            <legend><i class="fas fa-book-open"></i> Je verhaal vinden <i class="fas fa-angle-down"></i></legend>
+    <!--Filter verhalen-->
+    <form>
+        <fieldset>
+            <legend>
+                <i class="fas fa-book-open"></i>. Je verhaal vinden<i class="fas fa-angle-down"></i>
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <legend>Leesduur:</legend>
             <ul>
-               
                 <li>
-                    <p>Leesduur:</p>
-                    <input type='radio' value='1' name='radio' id='radio1' />
+                    <input type='radio' value='kort' name='radio' id='radio1' />
                     <label for='radio1'>Kort</label>
                 </li>
+
                 <li>
-                    <input type='radio' value='2' name='radio' id='radio2' />
+                    <input type='radio' value='gemiddeld' name='radio' id='radio2' />
                     <label for='radio2'>Gemiddeld</label>
                 </li>
                 <li>
-                    <input type='radio' value='3' name='radio' id='radio3' />
+                    <input type='radio' value='lang' name='radio' id='radio3' />
                     <label for='radio3'>Lang</label>
                 </li>
             </ul>
-            <!--Bron radio button (CSS + HTML) https://jsfiddle.net/petrabarus/pPgS7/-->
+        </fieldset>
 
-            <p>Genre:</p>
-<!--
-            <input type="checkbox" name="Genre" value="Bike"> Avontuur
-            <input type="checkbox" name="Genre" value="Bike"> Beroemdheid
-            <input type="checkbox" name="Genre" value="Bike"> Drama
-            <input type="checkbox" name="Genre" value="Bike"> Fantasie
-            <input type="checkbox" name="Genre" value="Bike"> Humor <br>
-            <input type="checkbox" name="Genre" value="Bike"> Sport
-            <input type="checkbox" name="Genre" value="Bike"> Verdriet
--->
-                   <ul>
+        <!--Bron radio button (CSS + HTML) https://jsfiddle.net/petrabarus/pPgS7/-->
+
+        <fieldset>
+            <legend>Genre:</legend>
+            <ul>
                 <li>
-                    <input type='checkbox' value='' name='genre' id='checkbox1' />
+                    <input type='checkbox' value='avontuur' name='genre1' />
                     <label for="checkbox">Avontuur</label>
                 </li>
                 <li>
-                    <input type='checkbox' value='genre' name='genre' id='checkbox2' />
+                    <input type='checkbox' value='beroemdheid' name='genre1' />
                     <label for="checkbox">Beroemdheid</label>
                 </li>
                 <li>
-                    <input type='checkbox' value='genre' name='genre' id='checkbox3' />
+                    <input type='checkbox' value='drama' name='genre1' />
                     <label for="checkbox">Drama</label>
                 </li>
+                <li>
+                    <input type='checkbox' value='fantasie' name='genre1' />
+                    <label for="checkbox">Fantasie</label>
+                </li>
+                <li>
+                    <input type='checkbox' value='humor' name='genre1' />
+                    <label for="checkbox">Humor</label>
+                </li>
+                <li>
+                    <input type='checkbox' value='sport' name='genre1' />
+                    <label for="checkbox">Sport</label>
+                </li>
+                <li>
+                    <input type='checkbox' value='verdriet' name='genre1' />
+                    <label for="checkbox">Verdriet</label>
+                </li>
             </ul>
-           
-           
-           
-            <p>Zoek op trefwoord:</p>
-            <input type="text" name="Zoek" value="" placeholder="bv. regenboog"><br>
+        </fieldset>
 
-            <button>Zoeken <i class="fas fa-search"></i></button>
 
-            <button>Verras mij <i class="fas fa-gift"></i></button>
+        <fieldset>
+            <legend>Zoeken op naam:</legend>
+            <input class="zoek" type="text" name="zoekopnaam" value="" placeholder="bv. Droom">
+        </fieldset>
 
+        <fieldset>
+            <button><i class="fas fa-search"></i>Zoeken </button>
+            <button><i class="fas fa-gift"></i>Verras mij</button>
             <button>Toon alle verhalen</button>
-
-        </form>
-    </section>
+        </fieldset>
+    </form>
 
 
     <!--Verhalen-->
     <section>
-
+        <h1>Recent gelezen door gebruikers</h1>
+        <p>Zit er iets voor jou tussen?</p>
         <!--Verhaal: Droom-->
         <article id="droom">
-            <!--<img src="img/droom.jpeg">-->
+            <picture>
+                <img src="img/droom.jpeg">
+            </picture>
             <button>Download</button>
             <h4>Droom</h4>
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
@@ -117,15 +125,16 @@
         <!--Verhaal: Gefrustreerd-->
 
         <article id="gefrustreerd">
-            <!--<img src="img/gefrustreerd.jpeg">-->
+            <picture>
+                <img src="img/gefrustreerd.jpeg">
+            </picture>
             <button type="button">Download</button>
-            <h4>Droom</h4>
+            <h4>Gefrustreerd</h4>
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>122 beoordelingen</p>
 
             <button type="button">Lees nu!</button>
         </article>
-
     </section>
 
 </body>

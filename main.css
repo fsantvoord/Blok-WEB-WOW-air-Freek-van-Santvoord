@@ -1,6 +1,13 @@
-body{
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body {
     background-color: white;
-    font-family: museo-sans,sans-serif;
+    font-family: museo-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -8,26 +15,25 @@ body{
 header {
     border-bottom: solid 1px;
     border-bottom-color: #a6c4c4;
-    padding-bottom: 3.4em;
-    margin-bottom: 2em;
-    
+    margin-top: 0em;
+    height: 3.5em;
 }
 
-#home {
+header button:nth-child(1) {
     background-image: url(img/wowairlogo.png);
     background-size: 100%;
-    height: 50pt;
-    width: 50pt;
+    height: 5.5em;
+    width: 5.5em;
     border: none;
     cursor: pointer;
     background-color: transparent;
-    position: absolute;
-    left: 41%;
-    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-#mijnwow {
-    position:absolute;
+header button:nth-child(2) {
+    position: absolute;
     right: 4%;
     top: 2.4%;
     border: solid 1px;
@@ -38,26 +44,26 @@ header {
     border-color: #880071;
     box-sizing: border-box;
     width: 15%;
-    
-    
-    
 }
 
-#textmijnwow {
-    font-size: .7em;
+header span {
+    font-size: .6em;
     color: #880071;
     padding-top: 10em;
 }
 
-#membericon{
+#membericon {
     font-size: 2em;
     color: #880071;
 }
 
-#wowverhaal{
+#wowverhaal {
     background: url("img/wowverhalen.png");
+    background-repeat: no-repeat;
     position: relative;
-
+    margin-bottom: 1em;
+    margin-top: 2em;
+    width: 100%;
 }
 
 #wowverhalenbanner1 {
@@ -84,67 +90,133 @@ header {
     padding-left: .5em;
     display: inline-block;
     margin-bottom: -10em;
-    
 }
 
 #wowverhalenbanner4 {
-    margin-left: 22em;
+    margin-left: 17em;
     display: inline-block;
     background-color: transparent;
     border: none;
     text-decoration: underline;
     color: white;
     font-weight: 500;
+    width: 40%;
 }
 
-#filter {
-    background-color: #F2EDE8;
-    border: none;
-    color: #880071;
-    padding: 1em 2em;
-    float: right;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 1em;
-    margin-top: 1.2em;
-    margin-right: 1.6em;
-    cursor: pointer;
-    position: relative;
+form {
+    background-color: #fafafa;
+    box-shadow: .25em .25em #ededed;
+    margin-bottom: 5%;
+}
+
+
+fieldset:nth-child(1) legend:nth-child(1) {
+    background-color: #880071;
+    color: white;
+    padding: 1em 0em;
+    width: 100%;
+    font-weight: 500;
+    align-content: flex-start;
 }
 
 legend {
-    background-color: #880071;   
-    color: white;
-    padding-left: 4em;
-    padding-right: 4em;
-    position: absolute;
-    
-
+    font-weight: 600;
+    font-size: 1em;
 }
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
 }
-li {
-    display: inline-block;
+
+ul:nth-child(2) {
+    flex-wrap: wrap;
 }
+
+
 input {
-    visibility:hidden;
+    visibility: hidden;
 }
+
+fieldset:nth-child(4) input {
+    visibility: visible;
+    border: solid rgba(234, 234, 234, 1);
+    margin-left: 5%;
+    padding: 2%;
+    width: 80%;
+    border-radius: 0.125em;
+    height: 1.4em;
+    font-size: 1em;
+}
+
+fieldset:nth-child(5) button:nth-child(1) {
+    background-color: purple;
+    border: transparent;
+    color: white;
+    margin-top: 3%;
+    padding: 3% 7% 3% 7%;
+    border-radius: .4em;
+    margin-left: 65%;
+}
+
+fieldset:nth-child(5) button:nth-child(2) {
+    background-color: grey;
+    border: transparent;
+    color: white;
+    margin-top: 3%;
+    padding: 2% 7% 2% 7%;
+    border-radius: .4em;
+    margin-right: 80%;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+
 label {
     cursor: pointer;
 }
+
 input:checked + label {
     background: #E0BE41;
     border-radius: .4em;
     color: black;
 }
 
+article {
+    border: solid .001em black;
+    margin-bottom: 5%;
+    padding: 1%;
+}
 
+article button:nth-child(1) {
+    background-color: purple;
+    color: white;
+    width: 20%
+}
 
+article button:nth-child(2) {
+    background-color: purple;
+    color: white;
+}
 
+picture {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
 
-
-
-
+picture > img {
+    width: 100%;
+}
