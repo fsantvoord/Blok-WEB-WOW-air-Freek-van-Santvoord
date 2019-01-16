@@ -3,17 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-
+    <link rel="stylesheet" href="filter.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://use.typekit.net/dja4fhc.css">
 
-    <link rel="icon" href="img/favicon.ico" />
-
-    <title>Wow air | Verhalen</title>
+    <title>WOW air | Alle 99 verhalen</title>
 </head>
 
 <body>
@@ -23,24 +18,16 @@
         <!--Filter button-->
         <button type="button"><br>
             <span>Mijn WOW</span></button>
-
-        <a href="mijnverhalen.html">MIJN VERHALEN</a>
+        <a href="./mijnverhalen.html">MIJN VERHALEN</a>
         <a href="./mijnvlucht.html">MIJN VLUCHT</a>
     </header>
 
-    <!--WOW verhalen + CSS afbeelding-->
-    <section id="wowverhaal">
-        <h2 id="wowverhalenbanner1">wow</h2>
-        <h3 id="wowverhalenbanner2">verhalen</h3>
-        <p id="wowverhalenbanner3">Lees een van de 99 <br> uniek vormgegeven verhalen</p>
-        <button type="button" id="wowverhalenbanner4">Verras mij!</button>
-    </section>
-
     <!--Filter verhalen-->
+<!--
     <form>
         <fieldset>
             <legend>
-                <i class="fas fa-book-open"></i> Je verhaal vinden <i class="fas fa-angle-down"></i>
+                <i class="fas fa-book-open"></i> Je verhaal vinden <i class="fas fa-angle-right"></i>
             </legend>
         </fieldset>
 
@@ -63,7 +50,7 @@
             </ul>
         </fieldset>
 
-        <!--Bron radio button (CSS + HTML) https://jsfiddle.net/petrabarus/pPgS7/-->
+        Bron radio button (CSS + HTML) https://jsfiddle.net/petrabarus/pPgS7/
 
         <fieldset>
             <legend>Genre:</legend>
@@ -107,21 +94,22 @@
 
         <fieldset>
             <div>
-                <a href="result.html"><i class="fas fa-gift"></i>Verras mij</a>
-                <a href="result.html"><i class="fas fa-search"></i>Zoeken </a>
+                <button><i class="fas fa-gift"></i>Verras mij</button>
+                <button><i class="fas fa-search"></i>Zoeken </button>
             </div>
             <div>
-                <a href="99verhalen.html">Toon alle 99 verhalen</a>
+                <button>Toon alle 99 verhalen</button>
             </div>
         </fieldset>
-    </form>
 
+    </form>
+-->
 
     <!--Verhalen-->
     <section>
-        <div>
-        <h1>Recent gelezen door gebruikers</h1>
-        <p>Zit er iets voor jou tussen?</p>
+        <div id="header99verhalen">
+        <h1>Alle 99 verhalen</h1>
+        <p>Hier is genoeg keuze</p>
         </div>
         <!--Verhaal: Droom-->
         <article>
@@ -135,7 +123,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>172 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Gefrustreerd-->
@@ -150,7 +138,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>122 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Vergezocht-->
@@ -165,7 +153,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>189 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
         <!--Verhaal: Verliefd-->
          <article>
@@ -179,7 +167,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>10 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Verrast-->
@@ -194,7 +182,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>111 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
 
         <!--Verhaal: Western-->
         </article>
@@ -209,7 +197,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>98 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
                 <article>
             <picture>
@@ -222,9 +210,9 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>78 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
-           <article>
+         <article>
             <picture>
                 <img src="img/droom.jpeg">
             </picture>
@@ -235,7 +223,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>172 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Gefrustreerd-->
@@ -250,7 +238,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>122 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Vergezocht-->
@@ -265,7 +253,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>189 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
         <!--Verhaal: Verliefd-->
          <article>
@@ -279,7 +267,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>10 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Verrast-->
@@ -294,7 +282,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>111 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
 
         <!--Verhaal: Western-->
         </article>
@@ -309,7 +297,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>98 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
                 <article>
             <picture>
@@ -322,9 +310,9 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>78 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
-           <article>
+         <article>
             <picture>
                 <img src="img/droom.jpeg">
             </picture>
@@ -335,7 +323,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>172 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Gefrustreerd-->
@@ -350,7 +338,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>122 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Vergezocht-->
@@ -365,7 +353,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>189 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
         <!--Verhaal: Verliefd-->
          <article>
@@ -379,7 +367,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>10 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Verrast-->
@@ -394,7 +382,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>111 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
 
         <!--Verhaal: Western-->
         </article>
@@ -409,7 +397,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>98 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
                 <article>
             <picture>
@@ -422,9 +410,9 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>78 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
-           <article>
+         <article>
             <picture>
                 <img src="img/droom.jpeg">
             </picture>
@@ -435,7 +423,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>172 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Gefrustreerd-->
@@ -450,7 +438,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>122 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Vergezocht-->
@@ -465,7 +453,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>189 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
         <!--Verhaal: Verliefd-->
          <article>
@@ -479,7 +467,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>10 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Verrast-->
@@ -494,7 +482,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>111 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
 
         <!--Verhaal: Western-->
         </article>
@@ -509,7 +497,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>98 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
                 <article>
             <picture>
@@ -522,9 +510,9 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i>
             <p>78 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
-           <article>
+         <article>
             <picture>
                 <img src="img/droom.jpeg">
             </picture>
@@ -535,7 +523,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>172 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Gefrustreerd-->
@@ -550,7 +538,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>122 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
 
         <!--Verhaal: Vergezocht-->
@@ -565,7 +553,7 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>189 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
         <!--Verhaal: Verliefd-->
          <article>
@@ -579,14 +567,54 @@
             <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <p>10 beoordelingen</p>
 
-            <a href="verhaal.html">Lees nu!</a>
+            <a href="">Lees nu!</a>
         </article>
-        <article id="morecontent">
-            <p>Voor meer verhalen</p>
-            <a id="allcontent"href="99verhalen.html">Klik hier</a>
+
+        <!--Verhaal: Verrast-->
+         <article>
+            <picture>
+                <img src="img/verrast.jpg">
+            </picture>
+            <button>
+            <span>DOWNLOAD</span>
+            </button>
+            <h4>Verrast</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p>111 beoordelingen</p>
+
+            <a href="">Lees nu!</a>
+
+        <!--Verhaal: Western-->
+        </article>
+             <article>
+            <picture>
+                <img src="img/western.png">
+            </picture>
+            <button>
+            <span>DOWNLOAD</span>
+            </button>
+            <h4>Western</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <p>98 beoordelingen</p>
+
+            <a href="">Lees nu!</a>
+        </article>
+                <article>
+            <picture>
+                <img src="img/presentator.png">
+            </picture>
+            <button>
+            <span>DOWNLOAD</span>
+            </button>
+            <h4>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij 'de kids'</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <p>78 beoordelingen</p>
+
+            <a href="">Lees nu!</a>
         </article>
     </section>
 <script src="./script.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: museo-sans, sans-serif;
+    box-sizing: border-box;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: white;
+    font-family: museo-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0em;
+    padding: 0.9375em;
+}
+
+header {
+    border-bottom: solid 1px #a6c4c4;
+    margin-top: 0em;
+    height: 2.8em;
+}
+
+header button:nth-child(1) {
+    background-image: url(img/wowairlogo.png);
+    background-size: 100%;
+    height: 5.5em;
+    width: 5.5em;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+header button:nth-child(2) {
+    background-image: url(img/wowmember.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    background-color: transparent;
+    position: absolute;
+    right: 4%;
+    top: 1.5%;
+    text-align: center;
+    border: solid 1px;
+    padding: 1 .2em;
+    height: 2.7em;
+    border-radius: .5em;
+    border-color: #880071;
+    box-sizing: border-box;
+    width: 3.4em;
+    white-space: nowrap;
+    color: black;
+}
+
+header button:nth-child(2) span {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7em;
+}
+
+header a:first-of-type {
+    visibility: hidden;
+}
+
+header a:last-of-type {
+    visibility: hidden;
+}
+
+header span {
+    font-size: .6em;
+    color: #880071;
+    padding-top: 10em;
+}
+
+#membericon {
+    font-size: 2em;
+    color: #880071;
+}
+
+
+fieldset {
+    border: none;
+}
+
+fieldset:nth-child(1) legend:nth-child(1) {
+    display: block;
+    transform: translateY(.3em);
+    background-color: rgb(109, 16, 92);
+    color: white;
+    font-weight: 500;
+    font-size: 1.15em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 100%;
+}
+
+fieldset:first-of-type > legend {
+    padding-left: 1em;
+}
+
+fieldset:nth-of-type(1) {
+    padding-top: 1em;
+}
+
+legend:nth-of-type(1),
+legend:nth-of-type(2),
+legend:nth-of-type(3){
+    color: black;
+    font-weight: 500;
+    padding-left: 1em;
+}
+
+input{
+    margin-left: .5em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    width: 9em;
+
+}
+
+span{
+    font-size: .5em;
+}
+
+main a{
+    background-color: #99258d;
+    font-size: 90%;
+    border: transparent;
+    color: white;
+    padding: 1em 2em 1em 2em;
+    border-radius: .2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: nowrap;
+    text-decoration: none;
+    margin-left: 1em
+}
+
+form {
+    background-color: #fafafa;
+    text-align: left;
+    margin: auto;
+    display: table;
+    margin-top: 3em;
+    padding: 6%;
+    box-shadow: 0.25em 0.25em #ededed;
+}
+}
+
+
+
+@media (min-width: 70em) {
+
+    header a:first-of-type {
+        visibility: visible;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 2.5em;
+        left: 4em;
+        font-size: 1.1em
+    }
+
+    header a:last-of-type {
+        visibility: visible;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 2.5em;
+        left: 15em;
+        font-size: 1.1em;
+        text-decoration: none;
+        color: black;
+    }
+
+
+    header {
+        border-bottom: solid 1px #a6c4c4;
+        margin-top: 0em;
+        height: 4.5em;
+    }
+
+    header button:nth-child(1) {
+        background-image: url(img/wowairlogo.png);
+        background-size: 100%;
+        height: 8.5em;
+        width: 8.5em;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    header button:nth-child(2) {
+        background-image: url(img/wowmember.jpg);
+        background-size: 60%;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-content: center;
+        background-color: transparent;
+        position: absolute;
+        right: 6em;
+        top: 2.5em;
+        text-align: center;
+        border: solid 1px;
+        padding: 1 .2em;
+        height: 2.7em;
+        border-radius: .5em;
+        border-color: #880071;
+        box-sizing: border-box;
+        width: 3.4em;
+        white-space: nowrap;
+        color: black;
+        font-size: .8em;
+    }
+
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin-bottom: 0em;
+        font-weight: 700;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    section,
+    form {
+        margin-left: 3.5em;
+        margin-right: 3.5em
+    }
+
+    header button:nth-child(2) {
+    background-image: url(img/wowmember.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    background-color: transparent;
+    position: absolute;
+    right: 6em;
+    top: 2.5em;
+    text-align: center;
+    border: solid 1px;
+    padding: 1 .2em;
+    height: 2.7em;
+    border-radius: .5em;
+    border-color: #880071;
+    box-sizing: border-box;
+    width: 3.4em;
+    white-space: nowrap;
+    color: black;
+    font-size: .8em;
+}
+
+}

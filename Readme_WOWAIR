@@ -1,0 +1,366 @@
+INDEX.HTML
+
+<head>
+
+    meta charset UTF-8 bevat de juiste typecatalogus om bepaalde tekens gemakkelijk in HTML te schrijven.
+
+    link CSS naar bestand main.css
+
+    meta viewport leest schermgrootte uit van device, hierop past CSS zich aan om breakpoints te creeëren.
+
+    link naar fontawesome.com voor icons e.d.
+
+    link naar typekit Adobe, om Museosans op te halen
+
+</head>
+
+<body>
+
+    <header>
+
+        <Title | wat in tabblad komt te staan>
+
+        <button | WOWair logo in centrum van pagina>
+
+        <button | Mijn WOW, om naar de mijn WOW functionaliteiten te gaan>
+
+        <a | beide links komen tevoorschijn op desktop formaat voor quickacces tot Mijn verhalen/vluchten>
+
+    </header>
+
+    <section>
+        *note: id's zijn in alle gevallen onnodig, maar wegens tijdgebrek heb ik deze niet meer aan kunnen passen (i.v.m. meerdere CSS en HTML bestanden).
+        In CSS kan ik ze als volgt aanspreken:
+        section:first-of-type > h2(h3/p/button){
+        }
+
+        <section | Heeft background image in CSS>
+        <h2/h3 | Title tags voor tekst in de banner>
+        <p | Subtekst onder de headers>
+        <button | Verras mij (brengt de gebruiker naar een random verhaal) *Note: werkt niet, zou een <a> element moeten zijn om werkend te zijn.
+
+    </section>
+
+
+    <form>
+
+        Opbouw filter:
+        <fieldset>
+            <legend></legend>
+            <ul>
+                <li>
+                </li>
+                <li>
+                </li>
+                ....
+            </ul>
+        </fieldset>
+
+        <fieldset | Is een display: flex; element, flex-direcion: row;
+
+        Gebruikte inputs: radio,checkbox&text
+        Wanneer inputs (radio&checkbox) worden geactiveerd komt er een gele padding met border-radius achter.
+
+        <div> -> <a | Zoek button met paarse padding div element voor styling (flex)
+        *note: 'Verras mij' button staat in HTML, in CSS display: none; dit omdat deze is verplaatst naar section:first-of-type{}>
+
+        <div> -> <a | Toon alle verhalen verwijst naar nieuwe pagina waar alle verhalen op staan.
+
+    </form>
+
+    <section>
+
+        <div | Zodat <h1> en <p> buiten de grid vallen>
+        <article | grid van 3 kolommen en 2 rijen, in CSS alle elementen opgedeeld en in grid gepositioneerd>
+        <picture>
+            <img | Thumbnail van verhaal
+        </picture>
+        <button | verhaal downloaden voor offline gebruik>
+        <span | Puur voor animatie zit de tekst in een>
+        <p> <i | Is een sterretje voor beoordeling>
+        <p | Tekst voor aantal beoordelingen>
+
+    </section>
+
+</body>
+
+
+______________________________________________________________
+
+MAIN.CSS
+
+* {
+    alle elementen resetten zodat ze geen eigen margins meenemen van parent o.i.d.
+}
+
+*:focus {
+    Voor alle <a> elementen die focus hebben, geen blauw vlak rondom, wanneer aangeklikt.
+}
+
+body {
+    Standaard achtergrondkleur: wit
+    Lettertype: Museo-sans (wordt uit HTMl Adobe typekit gehaald)
+}
+
+header {
+    Onderkant van header lijn van 0.0625em dik, met kleur #a6c4c4
+    Hoogte van header: 2.8em
+}
+
+header button:nth-child(1) {
+    background-image: logo van WOWair als home button (werkt niet ivm <button>, zou <a> moeten zijn)
+    background-color: transparent (standaard styling weg)
+    display: block; om centraal te positioneren
+}
+
+header button:nth-child(2) {
+    background-image: paarse member icon voor Mijn WOW
+    background-color: transparent (standaard styling weg)
+    white-space: nowrap (zodat tekst op één regel blijft staan)
+}
+
+header a {
+    visibility: hidden; (wordt visible bij breakpoint desktop)
+}
+
+#wowverhalenbanner {
+    background-image: banner WOW verhalen
+    background-size: cover; (vult paginabreedte)
+}
+
+#wowverhalenbanner1,2&3 {
+    tekstopmaak en positionering
+}
+
+#wowverhalenbanner4 {
+    tekstopmaak en positionering
+    border-radius: zodat het een cirkel wordt
+    drop-shadow: om het meer een button te maken (affordance)
+}
+
+form {
+    grijze achtergrondkleur
+    schaduw .25em .25em (rechtsonderin)
+    margins rondom
+}
+
+fieldset:nth-child(1) legend:nth-child(1) {
+    transform: translateY(.3em); om balk over breedte van pagina te laten gaan.
+    width: 100%; van pagina
+}
+
+legend {
+    alle legends het zelfde met deze regels
+    font-weight: 600;
+    font-size: 1em;
+    padding-left: 1em;
+    margin-bottom: .4em;
+}
+
+fieldset {
+    Border: none;
+    font-weight: 700;
+    rest uitlijning en positionering attributen
+}
+
+ul {
+    display: flex; (hele unordered list als flex, om alles te positioneren)
+    flex-direction: row; (als rij)
+}
+
+ul:nth-child(2) {
+    flex-wrap: wrap (zodat <li> op volgende regel komt wanneer het scherm te klein wordt)
+}
+
+input {
+    visibility: hidden; (om standaard styling (checkbox/radio etc.) van input te verwijderen)
+}
+
+fieldset:nth-child(4) input {
+    visibility: visible: om input zichtbaar te maken na bovenstaande regel
+    verder styling en positionering
+}
+
+fieldset div {
+    display: flex; (positioneren zoeken-button)
+    margins rechts voor posionering
+}
+
+div:nth-child(1) a:nth-child(1) {
+    display: none; verras mij button verwijderd.
+}
+
+div:nth-child(1) a:nth-child(2) {
+    tekstopmaak, padding en positionering
+}
+
+div:nth-child(2) a {
+    tekstopmaak en positionering
+}
+
+    label {
+        wanneer muis over label heen hovert veranderd cursor naar pointer
+        tekstopmaak
+    }
+
+    input:checked + label {
+        wanneer gebruiker op input klikt veranderd element label
+        background wordt geel, tekst wordt zwart, padding rondom tekst wordt .15em, border-radius wordt .4em;
+    }
+
+
+h1 {
+    tekstopmaak
+}
+
+section:nth-child(4) p:nth-child(2) {
+    tekst onder <h1> iets dunner lettertype. nowrap zodat alles op één regel blijft.
+}
+
+section:nth-child(4) div {
+    positionering van <h1> en <p>
+}
+
+article {
+    Grid van 2 kolommen en een niet aangegeven aantal rijen
+    padding rondom 1%
+    margin van links en rechts (1%) en van onder 5%
+}
+
+article:hover {
+    paarse rand rondom article wanneer gebruiker hovert
+}
+
+picture {
+    afbeelding in article heeft width: 100% en hoogte 10em
+}
+
+article button {
+    positie in grid gegeven (over img)
+    background-color gegeven
+    algemene styling
+}
+
+button.download span {
+    opacity: 0; (voor animatie)
+}
+
+button.download:before {
+    styling voor animatie
+    content: ""; (om deze later in te vullen bij keyframes)
+    animation: download 6s (seconden) lineair (verloop van animatie)
+}
+
+@keyframes download {
+    0% height: 10% (zorgt er voor dat de gele background-color op 10% hoogte blijft)
+
+    99% height 10% (anders zou de bg langzamerhand naar 100 gaan, nu blijft de bg laag op 10%)
+
+    100% vult hele download blok met geel
+}
+
+loadtext {
+    content veranderd elke 20% van de animatie
+}
+
+button.klaar::after {
+    content veranderd naar GEDOWNLOAD, en gaat van wit naar zwart voor animatie.
+}
+
+article h4 {
+    gepositioneerd in grid
+    tekstopmaak
+}
+
+
+#morecontent {
+    kan ook article:last-of-type{}
+    achtergrondkleur gegeven
+}
+
+#allcontent {
+    tekstopmaak en positionering
+}
+
+Hierna alle breakpoints
+
+Breakpoint 1 - min-width: 48em (tablet)
+Breakpoint 2 - min-width: 75em (desktop)
+
+Breakpoint 1:
+
+section:nth-child(4) div {
+    indeling van articles  voor breakpoint
+}
+
+#wowverhalenbanner4{
+    kleur naar geel (valt meer op)
+}
+
+
+Breakpoint 2:
+
+header a {
+    header elementen zichtbaar met styling en positionering
+}
+
+section:nth-child(4) div {
+    meer kolommen dan tablet versie (3 koloms)
+}
+
+form {
+    flex beide <ul> naast elkaar te positioneren door flex-wrap: wrap; te doen
+}
+
+fieldset {
+    door width mee te geven aan de fieldset worden elementen op een nieuwe regel geplaatst, hierdoor komen ze onder, of naast elkaar te staan.
+}
+
+header {
+    header veranderd iets om verhoudingen kloppend te maken
+}
+
+header button:nth-child(2) {
+    WOWair logo wordt groter
+}
+
+#wowverhaal {
+        background-position-y: 25%; om banner afbeelding leesbaar te maken
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
